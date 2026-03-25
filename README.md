@@ -11,9 +11,9 @@ and libraries:
 - [Telegram UI](https://github.com/Telegram-Mini-Apps/TelegramUI)
 - [Vite](https://vitejs.dev/)
 
-> The template was created using [npm](https://www.npmjs.com/). Therefore, it is
-> required to use it for this project as well. Using other package managers, you
-> will receive a corresponding error.
+> The template was created using [npm](https://www.npmjs.com/), but it also works with
+> other package managers (including `bun`). Use your preferred package manager
+> consistently for install and scripts.
 
 ## Install Dependencies
 
@@ -21,7 +21,7 @@ If you have just cloned this template, you should install the project
 dependencies using the command:
 
 ```Bash
-npm install
+bun install
 ```
 
 ## Scripts
@@ -35,11 +35,11 @@ This project contains the following scripts:
   the required standards.
 - `deploy`. Deploys the application to GitHub Pages.
 
-To run a script, use the `npm run` command:
+To run a script, use the `bun run` command:
 
 ```Bash
-npm run {script}
-# Example: npm run build
+bun run {script}
+# Example: bun run build
 ```
 
 ## Create Bot and Mini App
@@ -58,13 +58,13 @@ process.
 To run the application in the development mode, use the `dev` script:
 
 ```bash
-npm run dev:https
+bun run dev:https
 ```
 
 > [!NOTE]
 > As long as we use [vite-plugin-mkcert](https://www.npmjs.com/package/vite-plugin-mkcert),
 > launching the dev mode for the first time, you may see sudo password request.
-> The plugin requires it to properly configure SSL-certificates. To disable the plugin, use the `npm run dev` command.
+> The plugin requires it to properly configure SSL-certificates. To disable the plugin, use the `bun run dev` command.
 
 After this, you will see a similar message in your terminal:
 
@@ -154,13 +154,13 @@ Before deploying the application, make sure that you've built it and going to
 deploy the fresh static files:
 
 ```bash
-npm run build
+bun run build
 ```
 
 Then, run the deployment process, using the `deploy` script:
 
 ```Bash
-npm run deploy
+bun run deploy
 ```
 
 After the deployment completed successfully, visit the page with data according
